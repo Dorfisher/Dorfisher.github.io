@@ -3,38 +3,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Orbitron', sans-serif; /* פונט עתידני */
 }
 
 body {
-    background-image: url('filmtechbgimg.jpg'); /* שם התמונה 'filmtechbgimg.jpg' */
+    background-image: url('filmtechbgimg.jpg'); /* תמונת הרקע */
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Source Sans Pro', sans-serif; /* ברירת מחדל לפסקאות ותתי כותרות */
 }
 
-/* הקופסה עם אפקט זכוכית */
-.glass-box {
-    width: 50%; /* חצי מרוחב המסך במחשבים */
-    height: 75vh; /* 75% מגובה המסך */
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px); /* אפקט הזכוכית */
-    -webkit-backdrop-filter: blur(10px); /* תמיכה בדפדפנים מבוססי WebKit */
-    border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #fff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* ממורכז לגובה בתוך הריבוע */
-}
-
-/* עיצוב הטקסטים */
+/* הגדרת הכותרות עם הפונט הדומה לוודי אלן */
 h1 {
+    font-family: 'Georgia', serif; /* דומה ל-Windsor */
     font-size: 2.5rem;
     color: #ffffff;
     text-shadow: 0 0 10px rgba(128, 0, 128, 0.8); /* סגול בהיר */
@@ -42,26 +26,49 @@ h1 {
     font-weight: 700; /* משקל כבד לכותרת ראשית */
 }
 
+/* תת כותרת */
 h2 {
+    font-family: 'Playfair Display', serif; /* זוג לפונט */
     font-size: 1.8rem;
     color: #d8b4f2;
     text-shadow: 0 0 10px rgba(128, 0, 128, 0.6);
     margin-bottom: 15px;
-    font-weight: 400; /* משקל רגיל לתת כותרת */
+    font-weight: 400;
 }
 
+/* פסקה */
 p {
+    font-family: 'Source Sans Pro', sans-serif; /* גוף הפסקה */
     font-size: 1.2rem;
     color: #e0e0e0;
     margin-bottom: 20px;
-    font-weight: 400; /* משקל רגיל לפסקה */
+    font-weight: 400;
 }
 
+/* כותרת תחתונה */
 h3 {
+    font-family: 'Playfair Display', serif; /* פונט זוגי כמו תת הכותרת */
     font-size: 1.5rem;
     color: #d8b4f2;
     text-shadow: 0 0 10px rgba(128, 0, 128, 0.6);
-    font-weight: 700; /* משקל כבד לכותרת תחתונה */
+    font-weight: 700;
+}
+
+/* הקופסה עם אפקט זכוכית */
+.glass-box {
+    width: 50%;
+    height: 75vh;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); /* אפקט זכוכית */
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* ממורכז לגובה */
 }
 
 /* התאמות למסכים קטנים (מובייל) */
@@ -73,7 +80,7 @@ h3 {
     }
 
     h1 {
-        font-size: 2rem; /* הקטנת גודל הטקסט */
+        font-size: 2rem;
     }
 
     h2 {
