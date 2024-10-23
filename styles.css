@@ -1,0 +1,58 @@
+/* הגדרות כלליות */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url('filmtechbgimg.webp'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* הקופסה עם אפקט זכוכית */
+.glass-box {
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-left: -25%; /* חצי מהרוחב כדי למרכז בצד שמאל */
+    color: #fff;
+    text-align: center;
+}
+
+/* עיצוב הטקסטים */
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(128, 0, 128, 0.8); /* סגול בהיר */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #d8b4f2;
+    text-shadow: 0 0 10px rgba(128, 0, 128, 0.6);
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #d8b4f2;
+    text-shadow: 0 0 10px rgba(128, 0, 128, 0.6);
+}
