@@ -7,27 +7,30 @@
 }
 
 body {
-    background-image: url('filmtechbgimg.webp'); 
+    background-image: url('/Users/dorfisher/Documents/GitHub/Dorfisher.github.io/filmtechbgimg.webp'); /* החלף בכתובת התמונה שלך */
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
-    justify-content: left;
+    justify-content: flex-start; /* מיושר לשמאל */
     align-items: center;
 }
 
 /* הקופסה עם אפקט זכוכית */
 .glass-box {
-    width: 50%;
-    height: auto;
+    width: 50%; /* חצי מרוחב המסך */
+    height: 75vh; /* 75% מגובה המסך */
     padding: 30px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    margin-left: -25%; /* חצי מהרוחב כדי למרכז בצד שמאל */
+    margin-left: 0; /* מחובר לצד השמאלי של המסך */
     color: #fff;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* ממורכז לגובה */
 }
 
 /* עיצוב הטקסטים */
