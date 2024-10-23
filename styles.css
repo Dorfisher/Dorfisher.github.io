@@ -3,17 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Orbitron', sans-serif; /* פונט עתידני */
 }
 
 body {
-    background-image: url('filmtechbgimg.jpg'); /* החלף בכתובת התמונה שלך */
+    background-image: url('filmtechbgimg.jpg'); /* שם התמונה 'filmtechbgimg.jpg' */
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
-    justify-content: center; /* מרכז את הריבוע לרוחב */
-    align-items: center; /* מרכז את הריבוע לגובה */
+    justify-content: center;
+    align-items: center;
 }
 
 /* הקופסה עם אפקט זכוכית */
@@ -39,6 +39,7 @@ h1 {
     color: #ffffff;
     text-shadow: 0 0 10px rgba(128, 0, 128, 0.8); /* סגול בהיר */
     margin-bottom: 20px;
+    font-weight: 700; /* משקל כבד לכותרת ראשית */
 }
 
 h2 {
@@ -46,18 +47,21 @@ h2 {
     color: #d8b4f2;
     text-shadow: 0 0 10px rgba(128, 0, 128, 0.6);
     margin-bottom: 15px;
+    font-weight: 400; /* משקל רגיל לתת כותרת */
 }
 
 p {
     font-size: 1.2rem;
     color: #e0e0e0;
     margin-bottom: 20px;
+    font-weight: 400; /* משקל רגיל לפסקה */
 }
 
 h3 {
     font-size: 1.5rem;
     color: #d8b4f2;
     text-shadow: 0 0 10px rgba(128, 0, 128, 0.6);
+    font-weight: 700; /* משקל כבד לכותרת תחתונה */
 }
 
 /* התאמות למסכים קטנים (מובייל) */
