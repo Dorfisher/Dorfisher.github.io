@@ -6,62 +6,24 @@
 }
 
 body {
-    background-image: url('filmtechbgimg.jpg'); /* תמונת הרקע */
+    background-image: url('filmtechbgimg.jpg'); /* שם התמונה 'filmtechbgimg.jpg' */
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* מרכז את הקופסה לרוחב */
+    align-items: center; /* מרכז את הקופסה לגובה */
     font-family: 'Source Sans Pro', sans-serif; /* ברירת מחדל לפסקאות ותתי כותרות */
-}
-
-/* הגדרת הכותרות עם הפונט הדומה לוודי אלן */
-h1 {
-    font-family: 'Georgia', serif; /* דומה ל-Windsor */
-    font-size: 2.5rem;
-    color: #ffffff;
-    text-shadow: 0 0 10px rgba(128, 0, 128, 0.8); /* סגול בהיר */
-    margin-bottom: 20px;
-    font-weight: 700; /* משקל כבד לכותרת ראשית */
-}
-
-/* תת כותרת */
-h2 {
-    font-family: 'Playfair Display', serif; /* זוג לפונט */
-    font-size: 1.8rem;
-    color: #d8b4f2;
-    text-shadow: 0 0 10px rgba(128, 0, 128, 0.6);
-    margin-bottom: 15px;
-    font-weight: 400;
-}
-
-/* פסקה */
-p {
-    font-family: 'Source Sans Pro', sans-serif; /* גוף הפסקה */
-    font-size: 1.2rem;
-    color: #e0e0e0;
-    margin-bottom: 20px;
-    font-weight: 400;
-}
-
-/* כותרת תחתונה */
-h3 {
-    font-family: 'Playfair Display', serif; /* פונט זוגי כמו תת הכותרת */
-    font-size: 1.5rem;
-    color: #d8b4f2;
-    text-shadow: 0 0 10px rgba(128, 0, 128, 0.6);
-    font-weight: 700;
 }
 
 /* הקופסה עם אפקט זכוכית */
 .glass-box {
-    width: 50%;
-    height: 75vh;
+    width: 50%; /* חצי מרוחב המסך */
+    height: 75vh; /* 75% מגובה המסך */
     padding: 30px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px); /* אפקט זכוכית */
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* תמיכה בדפדפנים מבוססי WebKit */
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
@@ -71,8 +33,49 @@ h3 {
     justify-content: center; /* ממורכז לגובה */
 }
 
+/* עיצוב הטקסטים */
+h1, h2, h3, p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* הצללה לטקסט */
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #d8b4f2;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #d8b4f2;
+    font-weight: 700;
+}
+
 /* התאמות למסכים קטנים (מובייל) */
 @media only screen and (max-width: 768px) {
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
     .glass-box {
         width: 75%; /* 75% מרוחב המסך */
         height: 75vh; /* 75% מגובה המסך */
