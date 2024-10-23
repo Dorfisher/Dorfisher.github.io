@@ -12,25 +12,25 @@ body {
     background-position: center;
     height: 100vh;
     display: flex;
-    justify-content: flex-start; /* מיושר לשמאל */
-    align-items: center;
+    justify-content: center; /* מרכז את הריבוע לרוחב */
+    align-items: center; /* מרכז את הריבוע לגובה */
 }
 
 /* הקופסה עם אפקט זכוכית */
 .glass-box {
-    width: 50%; /* חצי מרוחב המסך */
+    width: 50%; /* חצי מרוחב המסך במחשבים */
     height: 75vh; /* 75% מגובה המסך */
     padding: 30px;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /* אפקט הזכוכית */
+    -webkit-backdrop-filter: blur(10px); /* תמיכה בדפדפנים מבוססי WebKit */
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    margin-left: 0; /* מחובר לצד השמאלי של המסך */
     color: #fff;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* ממורכז לגובה */
+    justify-content: center; /* ממורכז לגובה בתוך הריבוע */
 }
 
 /* עיצוב הטקסטים */
@@ -58,4 +58,29 @@ h3 {
     font-size: 1.5rem;
     color: #d8b4f2;
     text-shadow: 0 0 10px rgba(128, 0, 128, 0.6);
+}
+
+/* התאמות למסכים קטנים (מובייל) */
+@media only screen and (max-width: 768px) {
+    .glass-box {
+        width: 75%; /* 75% מרוחב המסך */
+        height: 75vh; /* 75% מגובה המסך */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem; /* הקטנת גודל הטקסט */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
 }
