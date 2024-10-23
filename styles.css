@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url('filmtechbgimg.webp'); /* החלף בכתובת התמונה שלך */
+    background-image: url('filmtechbgimg.jpg'); /* החלף בכתובת התמונה שלך */
     background-size: cover;
     background-position: center;
     height: 100vh;
