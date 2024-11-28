@@ -1,4 +1,4 @@
-/* הגדרות כלליות */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,17 +7,13 @@
 
 body {
     background-image: url('filmtechbgimg.jpg');
-    /* שם התמונה 'filmtechbgimg.jpg' */
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
-    /* מרכז את הקופסה לרוחב */
     align-items: center;
-    /* מרכז את הקופסה לגובה */
     font-family: 'Source Sans Pro', sans-serif;
-    /* ברירת מחדל לפסקאות ותתי כותרות */
 }
 
 .container {
@@ -28,21 +24,17 @@ body {
 }
 
 .spacer {
-    height: 50px;
+    height: 20px;
 }
 
-/* הקופסה עם אפקט זכוכית */
+/* Glass Effect Box */
 .glass-box {
     width: 50%;
-    /* חצי מרוחב המסך */
-    height: 75vh;
-    /* 75% מגובה המסך */
+    height: auto;
     padding: 30px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    /* אפקט זכוכית */
     -webkit-backdrop-filter: blur(10px);
-    /* תמיכה בדפדפנים מבוססי WebKit */
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
@@ -50,16 +42,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* ממורכז לגובה */
 }
 
-/* עיצוב הטקסטים */
-h1,
-h2,
-h3,
-p {
+/* Text Styles */
+h1, h2, h3, p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    /* הצללה לטקסט */
 }
 
 h1 {
@@ -78,6 +65,13 @@ h2 {
     font-weight: 400;
 }
 
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #b593eb;
+    font-weight: 700;
+}
+
 p {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2rem;
@@ -86,26 +80,15 @@ p {
     font-weight: 400;
 }
 
-h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    color: #d8b4f2;
-    font-weight: 700;
-}
-
-/* התאמות למסכים קטנים (מובייל) */
+/* Responsive Design */
 @media only screen and (max-width: 768px) {
-    body {
-        justify-content: center;
-        align-items: center;
+    .glass-box {
+        width: 90%;
+        padding: 20px;
     }
 
-    .glass-box {
-        width: 75%;
-        /* 75% מרוחב המסך */
-        height: 75vh;
-        /* 75% מגובה המסך */
-        padding: 20px;
+    .spacer {
+        height: 10px;
     }
 
     h1 {
@@ -116,11 +99,11 @@ h3 {
         font-size: 1.5rem;
     }
 
-    p {
-        font-size: 1rem;
-    }
-
     h3 {
         font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
     }
 }
