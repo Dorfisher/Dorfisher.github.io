@@ -13,6 +13,33 @@
     <div class="container">
         <div class="glass-box">
             <h1>soon</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+                <circle cx="100" cy="100" r="100" fill="#FFEB3B" />
+                <path
+                  d="M50,130 Q100,180 150,130"
+                  stroke="#000"
+                  stroke-width="6"
+                  fill="none"
+                  stroke-linecap="round"
+                >
+                  <animate attributeName="d" dur="2s" repeatCount="indefinite"
+                    values="
+                      M50,130 Q100,180 150,130;
+                      M50,130 Q100,170 150,130;
+                      M50,130 Q100,180 150,130"
+                  />
+                </path>
+                <circle cx="70" cy="80" r="10" fill="#000">
+                  <animate attributeName="r" dur="2s" repeatCount="indefinite"
+                    values="10; 14; 10" />
+                </circle>
+                <line x1="130" y1="80" x2="150" y2="80" stroke="#000" stroke-width="6" stroke-linecap="round">
+                  <animate attributeName="x2" dur="2s" repeatCount="indefinite"
+                    values="150; 140; 150" />
+                  <animate attributeName="y2" dur="2s" repeatCount="indefinite"
+                    values="80; 85; 80" />
+                </line>
+              </svg>
                </div>
 
     </div>
