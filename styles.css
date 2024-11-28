@@ -6,38 +6,60 @@
 }
 
 body {
-    background-image: url('filmtechbgimg.jpg'); /* שם התמונה 'filmtechbgimg.jpg' */
+    background-image: url('filmtechbgimg.jpg');
+    /* שם התמונה 'filmtechbgimg.jpg' */
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
-    justify-content: center; /* מרכז את הקופסה לרוחב */
-    align-items: center; /* מרכז את הקופסה לגובה */
-    font-family: 'Source Sans Pro', sans-serif; /* ברירת מחדל לפסקאות ותתי כותרות */
+    justify-content: center;
+    /* מרכז את הקופסה לרוחב */
+    align-items: center;
+    /* מרכז את הקופסה לגובה */
+    font-family: 'Source Sans Pro', sans-serif;
+    /* ברירת מחדל לפסקאות ותתי כותרות */
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .spacer {
     height: 50px;
 }
+
 /* הקופסה עם אפקט זכוכית */
 .glass-box {
-    width: 50%; /* חצי מרוחב המסך */
-    height: 75vh; /* 75% מגובה המסך */
+    width: 50%;
+    /* חצי מרוחב המסך */
+    height: 75vh;
+    /* 75% מגובה המסך */
     padding: 30px;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px); /* אפקט זכוכית */
-    -webkit-backdrop-filter: blur(10px); /* תמיכה בדפדפנים מבוססי WebKit */
+    backdrop-filter: blur(10px);
+    /* אפקט זכוכית */
+    -webkit-backdrop-filter: blur(10px);
+    /* תמיכה בדפדפנים מבוססי WebKit */
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* ממורכז לגובה */
+    justify-content: center;
+    /* ממורכז לגובה */
 }
 
 /* עיצוב הטקסטים */
-h1, h2, h3, p {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* הצללה לטקסט */
+h1,
+h2,
+h3,
+p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* הצללה לטקסט */
 }
 
 h1 {
@@ -79,8 +101,10 @@ h3 {
     }
 
     .glass-box {
-        width: 75%; /* 75% מרוחב המסך */
-        height: 75vh; /* 75% מגובה המסך */
+        width: 75%;
+        /* 75% מרוחב המסך */
+        height: 75vh;
+        /* 75% מגובה המסך */
         padding: 20px;
     }
 
