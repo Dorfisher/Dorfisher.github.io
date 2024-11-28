@@ -15,7 +15,9 @@ body {
     align-items: center; /* מרכז את הקופסה לגובה */
     font-family: 'Source Sans Pro', sans-serif; /* ברירת מחדל לפסקאות ותתי כותרות */
 }
-
+.spacer {
+    height: 50px;
+}
 /* הקופסה עם אפקט זכוכית */
 .glass-box {
     width: 50%; /* חצי מרוחב המסך */
