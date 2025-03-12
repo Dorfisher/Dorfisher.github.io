@@ -4,45 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>soon</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>הבלוג שלי</title>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="glass-box">
-            <h1>soon</h1>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-                <!-- Circle background -->
-                <circle cx="100" cy="100" r="100" fill="#FFEB3B" />
-              
-                <!-- Static smiling mouth -->
-                <path
-                  d="M50,130 Q100,180 150,130"
-                  stroke="#000"
-                  stroke-width="6"
-                  fill="none"
-                  stroke-linecap="round"
-                />
-              
-                <!-- Static left eye -->
-                <circle cx="70" cy="80" r="10" fill="#000" />
-              
-                <!-- Right eye (winking animation) -->
-                <circle cx="130" cy="80" r="10" fill="#000">
-                  <animate attributeName="opacity" dur="4s" repeatCount="indefinite"
-                    values="1; 1; 0; 0" keyTimes="0; 0.75; 0.75; 1" />
-                </circle>
-                <line x1="120" y1="80" x2="140" y2="80" stroke="#000" stroke-width="6" stroke-linecap="round" opacity="0">
-                  <animate attributeName="opacity" dur="4s" repeatCount="indefinite"
-                    values="0; 0; 1; 1" keyTimes="0; 0.75; 0.75; 1" />
-                </line>
-              </svg>
-              
-              
-               </div>
+        <header>
+            <h1>הבלוג שלי</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">בית</a></li>
+                    <li><a href="#">אודות</a></li>
+                    <li><a href="#">ארכיון</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main id="posts">
+            <p>טוען פוסטים...</p>
+        </main>
 
+        <footer>
+            <p>&copy; 2025 כל הזכויות שמורות</p>
+        </footer>
     </div>
 
     <script src="script.js"></script>
