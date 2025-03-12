@@ -1,7 +1,7 @@
     document.addEventListener("DOMContentLoaded", async function() {
         const postsContainer = document.getElementById("posts");
         try {
-            const response = await fetch("https://api.github.com/repos/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/contents/posts");
+            const response = await fetch("https://api.github.com/repos/Dorfisher/Dorfisher.github.io/contents/posts");
             const files = await response.json();
             postsContainer.innerHTML = "";
             
